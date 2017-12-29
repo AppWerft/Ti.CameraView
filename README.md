@@ -19,12 +19,12 @@ Simple usage (only view)
 ```
 var CV = require('ti.cameraview');
 
-var win = Ti.UI.createwWindow();
+var win = Ti.UI.createWindow();
 function showCamera() {
 	var CameraView = CV.createView({
-			width: 300,
-			height: 300,
-			cameraPosition: CV.hasFrontCamera() 
+		width: 300,
+		height: 300,
+		cameraPosition: CV.hasFrontCamera() 
 				? CV.CAMERA_FRONT 
 				: CV.CAMERA_BACK,
 		});
