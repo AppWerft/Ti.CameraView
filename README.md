@@ -21,14 +21,14 @@ var CV = require('ti.cameraview');
 
 var win = Ti.UI.createWindow();
 function showCamera() {
-	var CameraView = CV.createView({
-		width: 300,
-		height: 300,
-		cameraPosition: CV.hasFrontCamera() 
+var CameraView = CV.createView({
+	width: 300,
+	height: 300,
+	cameraPosition: CV.hasFrontCamera() 
 				? CV.CAMERA_FRONT 
 				: CV.CAMERA_BACK,
 		});
-	win.add(CameraView);					
+win.add(CameraView);					
 }
 if( Ti.Media.isCameraSupported ) {
     if (Ti.Media.hasCameraPermissions()) {
