@@ -110,21 +110,15 @@ Constants
 
 
 
-#### iOS
+
 - QUALITY_PHOTO 
 - QUALITY_HIGH 
 - QUALITY_MEDIUM 
 - QUALITY_LOW 
 - QUALITY_640x480 
 - QUALITY_1280x720
-
-#### Android 
-- RESOLUTION_HIGH - Use the highest resolution available on the device
-- RESOLUTION_LOW - Use the lowest resolution available on the device
-- RESOLUTION_SCREEN - Try to match the views resolution for the picture
-- RESOLUTION_480 - Set the resolution to 720x480 (or as close as possible)
-- RESOLUTION_720 - Set the resolution to 1280x720 (or as close as possible)
-- RESOLUTION_1080 - Set the resolution to 1920x1080 (or as close as possible)
+- CAMERA_FRONT
+- CAMERA_BACK
 
 
 
@@ -134,7 +128,11 @@ Methods of Module
 ### createView() <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 /><img src="http://envyandroid.com/content/images/2015/03/android3.png" width=24 />
 
 #### Properties:
+- standard view properties (width, height, top, backgroundWidth, etc.)
+- videoQuality (one of QUALITY constants)
+- cameraPosition (one CAMERA_FRONT, CAMERA_BACk constants)
 
+### hasFrontCamera()<img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 /><img src="http://envyandroid.com/content/images/2015/03/android3.png" width=24 />
 ### hasFrontCamera()<img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 /><img src="http://envyandroid.com/content/images/2015/03/android3.png" width=24 />
 
 

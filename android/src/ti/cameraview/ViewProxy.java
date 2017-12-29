@@ -55,6 +55,8 @@ public class ViewProxy extends TiViewProxy {
 	private static Boolean FRONT_CAMERA = false;
 	private static int PICTURE_TIMEOUT = 1000;
 	private static int RESOLUTION_NAME = CameraViewModule.RESOLUTION_LOW;
+	private static int QUALITY = CameraViewModule.QUALITY_LOW;
+	
 
 	private double aspectRatio = 1;
 
@@ -100,6 +102,9 @@ public class ViewProxy extends TiViewProxy {
 
 			if (d.containsKey("resolutionNamed")) {
 				RESOLUTION_NAME = d.getInt("resolutionNamed");
+			}
+			if (d.containsKey("videoQuality")) {
+				QUALITY = d.getInt("videoQuality");
 			}
 		}
 

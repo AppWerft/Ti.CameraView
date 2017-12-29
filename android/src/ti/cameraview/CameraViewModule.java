@@ -23,7 +23,7 @@ public class CameraViewModule extends KrollModule {
 
 	public CameraViewModule() {
 		super();
-	}	
+	}
 
 	@Kroll.constant
 	public static final int RESOLUTION_HIGH = 0;
@@ -42,6 +42,24 @@ public class CameraViewModule extends KrollModule {
 
 	@Kroll.constant
 	public static final int RESOLUTION_1080 = 5;
+
+	@Kroll.constant
+	public static final int CAMERA_FRONT = 10;
+	@Kroll.constant
+	public static final int CAMERA_BACK = 11;
+
+	@Kroll.constant
+	public static final int QUALITY_PHOTO = 20;
+	@Kroll.constant
+	public static final int QUALITY_HIGH = 21;
+	@Kroll.constant
+	public static final int QUALITY_MEDIUM = 22;
+	@Kroll.constant
+	public static final int QUALITY_LOW = 23;
+	@Kroll.constant
+	public static final int QUALITY_640x480 = 24;
+	@Kroll.constant
+	public static final int QUALITY_1280x720 = 25;
 
 	@Kroll.method
 	public boolean hasFrontCamera() {
