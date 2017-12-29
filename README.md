@@ -131,18 +131,21 @@ Constants
 Methods of Module
 -----------------
 
-### createView() <img src="http://envyandroid.com/content/images/2015/03/android3.png" width=24 />
+### createView() <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 /><img src="http://envyandroid.com/content/images/2015/03/android3.png" width=24 />
 
 #### Properties:
 
+### hasFrontCamera()<img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 /><img src="http://envyandroid.com/content/images/2015/03/android3.png" width=24 />
 
 
 Methods of CameraView
 --------------------
 
-### takePicture() <img src="http://envyandroid.com/content/images/2015/03/android3.png" width=24 />
+### takePicture() <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 /><img src="http://envyandroid.com/content/images/2015/03/android3.png" width=24 />
 
+### startRecording() <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 />
 
-### startRecording() <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 /><img src="http://envyandroid.com/content/images/2015/03/android3.png" width=24 />
+### stopRecording() <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 />
 
-### stopRecording() <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 /><img src="http://envyandroid.com/content/images/2015/03/android3.png" width=24 />
+Events of CamerView
+-------------------
