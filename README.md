@@ -20,26 +20,31 @@ Simple usage (only view)
 var CV = require('ti.cameraview');
 
 var win = Ti.UI.createwWindow();
+function showCamera() {
+	var CameraView = CV.createView({
+							width: 300,
+							height: 300,
+							cameraPosition: CV.hasFrontCamera() 
+								? CV.CAMERA_FRONT 
+								: CV.CAMERA_BACK,
+						});
+	win.add(CameraView);					
+}
 if( Ti.Media.isCameraSupported ) {
     if (Ti.Media.hasCameraPermissions()) {
         showCamera();
     } else { 
         Ti.Media.requestCameraPermissions(function(e) {
             if (e.success === true) {
-				CameraView= CV.createView({
-					width: 300,
-					height: 300,
-					cameraPosition: CV.hasFrontCamera() ? CV.CAMERA_FRONT : CV.CAMERA_BACK,
-				});
+				 showCamera();
             } else {
                 alert("Access denied, error: " + e.error);
             }
    		    });
-   	 }
+   	   }
 	} else {
    	 alert("No camera found!");
 	}
-win.add(CameraView)
 win.open();
 ```
 
