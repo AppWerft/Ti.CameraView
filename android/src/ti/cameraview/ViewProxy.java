@@ -258,7 +258,7 @@ public class ViewProxy extends TiViewProxy {
 
 	
 	@Kroll.method
-	public takePicture() {
+	public void takePicture() {
 		this.snapPicture();
 	}
 	// Added by michael browne

@@ -19,11 +19,11 @@ import org.appcelerator.kroll.common.Log;
 
 @Kroll.module(name = "CameraView", id = "ti.cameraview")
 public class CameraViewModule extends KrollModule {
-	private static final String TAG = "CamView";
+	public static final String TAG = "CamView";
 
 	public CameraViewModule() {
 		super();
-	}
+	}	
 
 	@Kroll.constant
 	public static final int RESOLUTION_HIGH = 0;
