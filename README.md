@@ -133,7 +133,20 @@ Methods of Module
 - cameraPosition (one CAMERA_FRONT, CAMERA_BACk constants)
 
 ### hasFrontCamera()<img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 /><img src="http://envyandroid.com/content/images/2015/03/android3.png" width=24 />
-### hasFrontCamera()<img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 /><img src="http://envyandroid.com/content/images/2015/03/android3.png" width=24 />
+Has camera check in device, front
+### hasBackCamera()<img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 /><img src="http://envyandroid.com/content/images/2015/03/android3.png" width=24 />
+Has camera check in device, back
+### hasTorch()<img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 /><img src="http://envyandroid.com/content/images/2015/03/android3.png" width=24 />
+Has LED flash light check in device
+### isTorch()<img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 />
+Now LED flash light on or off in created CameraView method
+
+### toggleTorch()<img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 />
+Toggle front or back camera in created CameraView method
+
+### startCamera() / stopCamera() <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 />
+
+Start or stop camera output in created CameraView method
 
 
 Methods of CameraView

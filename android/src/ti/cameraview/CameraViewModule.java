@@ -71,7 +71,24 @@ public class CameraViewModule extends KrollModule {
 			return false;
 		}
 	}
-
+	@Kroll.method
+	public boolean hasBackCamera() {
+		return true;
+	}
+	@Kroll.method
+	public boolean hasTorch() {
+		Context ctx = TiApplication.getInstance().getApplicationContext();
+		if (ctx.getPackageManager().hasSystemFeature(
+				PackageManager.FEATURE_CAMERA_FLASH)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	@Kroll.method
+	public boolean isTorch() {
+		return false;
+	}
 	@Kroll.onAppCreate
 	public static void onAppCreate(TiApplication app) {
 		Log.d(TAG, "inside onAppCreate");
