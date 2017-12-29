@@ -30,8 +30,8 @@ win.open();
 
 
 CameraView.takePicture({
-	saveToPhotoGallery: true,	// default false
-	shutterSound: false,		// default true
+	saveToPhotoGallery: true,	// default false, only iOS
+	shutterSound: false,		// default true, only iOS
 	success: function(e){
 		// e.media(TiBlob), like Ti.Media.showCamera
 	},
@@ -58,10 +58,8 @@ and since Marshmellow you need runtime permission.
 function showCamera() {
 	var CV = require("ti.cameraview");
 	var CameraView = CV.createView({
-		save_location: "my_app",
-		useFrontCamera: true,
 		pictureTimeout: 200,
-		resolutionNamed: CV.RESOLUTION_480
+		quality: CV.QUALITY_MEDIUM
 	});
 	
 	var btSnap = Ti.UI.createButton({
@@ -73,11 +71,11 @@ function showCamera() {
 	});
 
 	btSnap.addEventListener("click", function(){
-		CameraView.snapPicture();
-	});
-
-	CameraView.addEventListener("picture_taken", function(evt){
-		alert("Image saved to "+evt.path);
+		CameraView.takePicture({
+			success: function(e){
+    		},
+   		 	error: function(){} 
+		});
 	});
 
 	win.addEventListener("close", function(){
@@ -107,9 +105,6 @@ if( Ti.Media.isCameraSupported ) {
 
 Constants
 ---------
-
-
-
 
 - QUALITY_PHOTO 
 - QUALITY_HIGH 

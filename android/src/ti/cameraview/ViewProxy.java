@@ -18,6 +18,7 @@ import java.util.Date;
 import java.util.List;
 
 import org.appcelerator.kroll.KrollDict;
+import org.appcelerator.kroll.KrollFunction;
 import org.appcelerator.kroll.annotations.Kroll;
 import org.appcelerator.titanium.proxy.TiViewProxy;
 import org.appcelerator.titanium.view.TiUIView;
@@ -56,7 +57,9 @@ public class ViewProxy extends TiViewProxy {
 	private static int PICTURE_TIMEOUT = 1000;
 	private static int RESOLUTION_NAME = CameraViewModule.RESOLUTION_LOW;
 	private static int QUALITY = CameraViewModule.QUALITY_LOW;
-	
+	private KrollFunction successCallback;
+	private KrollFunction errorCallback;
+	private KrollFunction cancelCallback;
 
 	private double aspectRatio = 1;
 
@@ -263,12 +266,12 @@ public class ViewProxy extends TiViewProxy {
 
 	
 	@Kroll.method
-	public void takePicture() {
-		this.snapPicture();
+	public void takePicture(KrollDict props) {
+		this.snapPicture(props);
 	}
 	// Added by michael browne
 	@Kroll.method
-	public void snapPicture() {
+	public void snapPicture(KrollDict props) {
 		Log.i(TAG, "Snap");
 		Camera cam = ((CameraView) view).currentCameraInstance();
 
