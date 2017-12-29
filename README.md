@@ -22,12 +22,12 @@ var CV = require('ti.cameraview');
 var win = Ti.UI.createwWindow();
 function showCamera() {
 	var CameraView = CV.createView({
-					width: 300,
-					height: 300,
-					cameraPosition: CV.hasFrontCamera() 
-						? CV.CAMERA_FRONT 
-						: CV.CAMERA_BACK,
-				});
+			width: 300,
+			height: 300,
+			cameraPosition: CV.hasFrontCamera() 
+				? CV.CAMERA_FRONT 
+				: CV.CAMERA_BACK,
+		});
 	win.add(CameraView);					
 }
 if( Ti.Media.isCameraSupported ) {
@@ -36,7 +36,7 @@ if( Ti.Media.isCameraSupported ) {
     } else { 
         Ti.Media.requestCameraPermissions(function(e) {
             if (e.success === true) {
-				 showCamera();
+			 showCamera();
             } else {
                 alert("Access denied, error: " + e.error);
             }
