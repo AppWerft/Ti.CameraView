@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.0
+apiversion: 2
+architectures: armv7 arm64 i386 x86_64
+description: CameraView
+author: Rainer Schleevoigt
+license: Specify your license
+copyright: Hamburger Appwerft
+
+# these should not be edited
+name: CameraView
+moduleid: ti.cameraview
+guid: f99c7783-8bc8-4fd0-a47a-3d2b2af43769
+platform: iphone
+minsdk: 7.0.1.GA
