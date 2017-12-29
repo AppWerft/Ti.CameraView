@@ -9,6 +9,9 @@
 package ti.cameraview;
 
 import org.appcelerator.kroll.KrollModule;
+
+import android.content.pm.PackageManager;
+import android.content.Context;
 import org.appcelerator.kroll.annotations.Kroll;
 
 import org.appcelerator.titanium.TiApplication;
@@ -17,6 +20,7 @@ import org.appcelerator.kroll.common.Log;
 @Kroll.module(name = "CameraView", id = "ti.cameraview")
 public class CameraViewModule extends KrollModule {
 	private static final String TAG = "CamView";
+
 	public CameraViewModule() {
 		super();
 	}
@@ -38,6 +42,17 @@ public class CameraViewModule extends KrollModule {
 
 	@Kroll.constant
 	public static final int RESOLUTION_1080 = 5;
+
+	@Kroll.method
+	public boolean hasFrontCamera() {
+		Context ctx = TiApplication.getInstance().getApplicationContext();
+		if (ctx.getPackageManager().hasSystemFeature(
+				PackageManager.FEATURE_CAMERA_FRONT)) {
+			return true;
+		} else {
+			return false;
+		}
+	}
 
 	@Kroll.onAppCreate
 	public static void onAppCreate(TiApplication app) {
