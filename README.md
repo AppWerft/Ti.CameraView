@@ -13,94 +13,52 @@ Installing
 gittio install ti.cameraview
 ```
 
-Usage
------
+Simple usage (only view)
+-----------------------
 
 ```
-var win = Ti.UI.createwWindow();
 var CV = require('ti.cameraview');
 
-CameraView= CV.createView({
-	width: 300,
-	height: 300,
-	cameraPosition: CV.hasFrontCamera() ? CV.CAMERA_FRONT : CV.CAMERA_BACK,
-});
+var win = Ti.UI.createwWindow();
+if( Ti.Media.isCameraSupported ) {
+    if (Ti.Media.hasCameraPermissions()) {
+        showCamera();
+    } else { 
+        Ti.Media.requestCameraPermissions(function(e) {
+            if (e.success === true) {
+				CameraView= CV.createView({
+					width: 300,
+					height: 300,
+					cameraPosition: CV.hasFrontCamera() ? CV.CAMERA_FRONT : CV.CAMERA_BACK,
+				});
+            } else {
+                alert("Access denied, error: " + e.error);
+            }
+   		    });
+   	 }
+	} else {
+   	 alert("No camera found!");
+	}
 win.add(CameraView)
 win.open();
-
-
-CameraView.takePicture({
-	saveToPhotoGallery: true,	// default false, only iOS
-	shutterSound: false,		// default true, only iOS
-	success: function(e){
-		// e.media(TiBlob), like Ti.Media.showCamera
-	},
-	error: function(e){
-	}
-});
 ```
 
-Android specific permissions
-----------------------------
+Permissions
+-------------
 
-For android you need two things:
-
-This entry inb manifest:
+For android you need this entry in Manifest.xml:
 
 ```xml
 <uses-permission android:name="android.permission.CAMERA"/>
 <uses-feature android:name="android.hardware.camera"/>
 <uses-feature android:name="android.hardware.camera.autofocus"/>
 ```
-and since Marshmellow you need runtime permission.
 
-```javascript
-function showCamera() {
-	var CV = require("ti.cameraview");
-	var CameraView = CV.createView({
-		pictureTimeout: 200,
-		quality: CV.QUALITY_MEDIUM
-	});
-	
-	var btSnap = Ti.UI.createButton({
-		title: "Capture",
-		bottom: "10dp",
-		height: "80dp",
-		width: "80dp",
-		zIndex: 2
-	});
+For iOS>10 you need this entry in .plist (tiapp.xml)
 
-	btSnap.addEventListener("click", function(){
-		CameraView.takePicture({
-			success: function(e){
-    		},
-   		 	error: function(){} 
-		});
-	});
-
-	win.addEventListener("close", function(){
-		CameraView = null;
-	});
-
-	win.add(CameraView);
-	win.add(btSnap);
-}
-
-if( Ti.Media.isCameraSupported ) {
-	if (Ti.Media.hasCameraPermissions()) {
-	    showCamera();
-	} else { 
-	    Ti.Media.requestCameraPermissions(function(e) {
-            if (e.success === true) {
-                showCamera();
-            } else {
-                alert("Access denied, error: " + e.error);
-            }
-	    });
-	}
-} else {
-	alert("No camera found!");
-}
+```xml
+<key>NSCameraUsageDescription</key>
+<string>Privacy - Camera Usage Description <== to edit!</string>
 ```
 
 Constants
