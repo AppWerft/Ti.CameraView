@@ -1,4 +1,4 @@
-<project name="TiCameraView" default="dist">
+<project name="custom-android-camera" default="dist">
 	<description>
 		Ant build script for Titanium Android module custom-android-camera
 	</description>

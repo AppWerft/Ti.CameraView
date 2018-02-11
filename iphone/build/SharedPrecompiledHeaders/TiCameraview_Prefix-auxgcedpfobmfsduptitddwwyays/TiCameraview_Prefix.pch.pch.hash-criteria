@@ -1,0 +1,28 @@
+-x
+objective-c
+-arch
+i386
+-std=c99
+-fpascal-strings
+-Os
+-DTI_VERSION=
+-isysroot
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.2.sdk
+-fasm-blocks
+-mios-simulator-version-min=6.0
+-g
+-fobjc-abi-version=2
+-fobjc-legacy-dispatch
+-iquote
+-iquote
+-I/Users/fuerst/Desktop/ti.cameraview/iphone/build/Release-iphonesimulator/include
+-I/Library/Application Support/Titanium/mobilesdk/osx/6.0.2.GA/iphone/include
+-I/Library/Application Support/Titanium/mobilesdk/osx/6.0.2.GA/iphone/include/TiCore
+-I/Library/Application Support/Titanium/mobilesdk/osx/6.0.2.GA/iphone/include/ASI
+-I/Library/Application Support/Titanium/mobilesdk/osx/6.0.2.GA/iphone/include/APSHTTPClient
+-F/Users/fuerst/Desktop/ti.cameraview/iphone/build/Release-iphonesimulator
+-DTI_POST_1_2
+i386-apple-darwin17.3.0
+"4.2.1 Compatible Apple LLVM 9.0.0 (clang-900.0.39.2)"
+SDK_PRODUCT_BUILD_VERSION=15C107
+15C107
