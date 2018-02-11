@@ -1,9 +1,9 @@
 dependencies: \
-  /Users/fuerst/Desktop/ti.cameraview/iphone/TiCameraview_Prefix.pch \
-  /Users/fuerst/Desktop/ti.cameraview/iphone/Classes/TiCameraviewModule.m \
-  /Users/fuerst/Desktop/ti.cameraview/iphone/Classes/TiCameraviewModule.h \
-  /Users/fuerst/Desktop/ti.cameraview/iphone/Classes/TiCameraViewController.h \
-  /Users/fuerst/Desktop/ti.cameraview/iphone/Constants.h \
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/TiCameraview_Prefix.pch \
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/Classes/TiCameraviewModule.m \
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/Classes/TiCameraviewModule.h \
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/Classes/TiCameraViewController.h \
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/Constants.h \
   /Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/iphone/include/TiViewProxy.h \
   /Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/iphone/include/TiProxy.h \
   /Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/iphone/include/TiEvaluator.h \

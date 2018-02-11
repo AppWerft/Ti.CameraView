@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/fuerst/Desktop/ti.cameraview/iphone/TiCameraview_Prefix.pch \
-  /Users/fuerst/Desktop/ti.cameraview/iphone/Classes/TiCameraViewController.m \
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/TiCameraview_Prefix.pch \
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/Classes/TiCameraViewController.m \
   /Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/iphone/include/TiApp.h \
   /Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/iphone/include/TiHost.h \
   /Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/iphone/include/TiProxy.h \
@@ -46,5 +46,5 @@ dependencies: \
   /Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/iphone/include/TiGradient.h \
   /Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/iphone/include/TiRect.h \
   /Library/Application\ Support/Titanium/mobilesdk/osx/6.0.2.GA/iphone/include/TiViewTemplate.h \
-  /Users/fuerst/Desktop/ti.cameraview/iphone/Classes/TiCameraViewController.h \
-  /Users/fuerst/Desktop/ti.cameraview/iphone/Constants.h
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/Classes/TiCameraViewController.h \
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/Constants.h

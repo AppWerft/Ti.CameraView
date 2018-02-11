@@ -1,4 +1,4 @@
 dependencies: \
-  /Users/fuerst/Desktop/ti.cameraview/iphone/TiCameraview_Prefix.pch \
-  /Users/fuerst/Desktop/ti.cameraview/iphone/Classes/TiCameraviewModuleAssets.m \
-  /Users/fuerst/Desktop/ti.cameraview/iphone/Classes/TiCameraviewModuleAssets.h
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/TiCameraview_Prefix.pch \
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/Classes/TiCameraviewModuleAssets.m \
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/Classes/TiCameraviewModuleAssets.h
