@@ -21,7 +21,7 @@ var CV = require('ti.cameraview');
 
 var win = Ti.UI.createWindow();
 function showCamera() {
-	var CameraView = CV.createView({
+	var CameraView = CV.createCameraView({
 		width: 300,
 		height: 300,
 		cameraPosition: CV.hasFrontCamera() ? CV.CAMERA_FRONT : CV.CAMERA_BACK,
