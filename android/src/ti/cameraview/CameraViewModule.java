@@ -10,71 +10,115 @@ package ti.cameraview;
 
 import org.appcelerator.kroll.KrollModule;
 import org.appcelerator.kroll.annotations.Kroll;
-
 import org.appcelerator.titanium.TiApplication;
 import org.appcelerator.kroll.common.Log;
 
-@Kroll.module(name="CameraView", id="ti.cameraview")
-public class CameraViewModule extends KrollModule
-{
+import android.app.Activity;
+import android.content.pm.PackageManager;
+import android.os.Build;
+import android.support.v4.content.ContextCompat;
+import android.hardware.Camera;
+import android.hardware.Camera.CameraInfo;
+
+@Kroll.module(name = "CameraView", id = "ti.cameraview")
+public class CameraViewModule extends KrollModule {
 
 	// Standard Debugging variables
 	private static final String TAG = "CustomAndroidCameraModule";
 
 	// You can define constants with @Kroll.constant, for example:
 	// @Kroll.constant public static final String EXTERNAL_NAME = value;
-	
-	public CameraViewModule()
-	{
+
+	public CameraViewModule() {
 		super();
 	}
-	
+
 	@Kroll.constant
 	public static final int RESOLUTION_HIGH = 0;
-	
+
 	@Kroll.constant
 	public static final int RESOLUTION_LOW = 1;
-	
+
 	@Kroll.constant
 	public static final int RESOLUTION_SCREEN = 2;
-	
+
 	@Kroll.constant
 	public static final int RESOLUTION_480 = 3;
-	
+
 	@Kroll.constant
 	public static final int RESOLUTION_720 = 4;
-	
+
 	@Kroll.constant
 	public static final int RESOLUTION_1080 = 5;
-	
+
 	@Kroll.onAppCreate
-	public static void onAppCreate(TiApplication app)
-	{
+	public static void onAppCreate(TiApplication app) {
 		Log.d(TAG, "inside onAppCreate");
-		// put module init code that needs to run when the application is created
+		// put module init code that needs to run when the application is
+		// created
+	}
+
+	@Kroll.method
+	public boolean isPermissionGranted() {
+		if (Build.VERSION.SDK_INT >= 23) {
+			Activity thisActivity = TiApplication.getInstance()
+					.getCurrentActivity();
+			if (ContextCompat.checkSelfPermission(thisActivity,
+					android.Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
+				return true;
+			} else {
+
+				return false;
+			}
+		} else { // permission is automatically granted on sdk<23 upon
+					// installation
+			return true;
+		}
 	}
 
 	// Methods
 	@Kroll.method
-	public String example()
-	{
-		Log.d(TAG, "example called");
-		return "hello world";
+	public Boolean hasFrontCamera() {
+		Boolean found = false;
+		int cameraCount = Camera.getNumberOfCameras();
+		if (cameraCount == 0) {
+			return found;
+		}
+		CameraInfo cameraInfo = new CameraInfo();
+		for (int i = 0; i < cameraCount; i++) {
+			Camera.getCameraInfo(i, cameraInfo);
+			if (cameraInfo.facing == CameraInfo.CAMERA_FACING_FRONT)
+				found = true;
+		}
+		return found;
 	}
-	
+
+	@Kroll.method
+	public Boolean hasRearCamera() {
+		Boolean found = false;
+		int cameraCount = Camera.getNumberOfCameras();
+		if (cameraCount == 0) {
+			return found;
+		}
+		CameraInfo cameraInfo = new CameraInfo();
+		for (int i = 0; i < cameraCount; i++) {
+			Camera.getCameraInfo(i, cameraInfo);
+			if (cameraInfo.facing == CameraInfo.CAMERA_FACING_BACK)
+				found = true;
+		}
+		return found;
+	}
+
 	// Properties
 	@Kroll.getProperty
-	public String getExampleProp()
-	{
+	public String getExampleProp() {
 		Log.d(TAG, "get example property");
 		return "hello world";
 	}
-	
-	
+
 	@Kroll.setProperty
 	public void setExampleProp(String value) {
 		Log.d(TAG, "set example property: " + value);
 	}
 
 }
-

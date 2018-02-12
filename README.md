@@ -81,7 +81,7 @@ Constants
 Methods of Module
 -----------------
 
-### createCameraView() <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 /><img src="http://envyandroid.com/content/images/2015/03/android3.png" width=24 />
+### createView() <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 /><img src="http://envyandroid.com/content/images/2015/03/android3.png" width=24 />
 
 #### Properties:
 - standard view properties (width, height, top, backgroundWidth, etc.)
@@ -114,5 +114,5 @@ Methods of CameraView
 
 ### stopRecording() <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 />
 
-Events of CameraView
+Events of Camera	View
 -------------------

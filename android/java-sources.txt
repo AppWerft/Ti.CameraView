@@ -1,5 +1,5 @@
 "/Users/fuerst/Documents/MLearning/Ti.CameraView/android/src/ti/cameraview/CameraViewModule.java"
-"/Users/fuerst/Documents/MLearning/Ti.CameraView/android/src/ti/cameraview/CameraViewProxy.java"
+"/Users/fuerst/Documents/MLearning/Ti.CameraView/android/src/ti/cameraview/ViewProxy.java"
 "/Users/fuerst/Documents/MLearning/Ti.CameraView/android/build/generated/java/ti/cameraview/CameraViewBootstrap.java"
 "/Users/fuerst/Documents/MLearning/Ti.CameraView/android/build/generated/r/android/support/compat/R.java"
 "/Users/fuerst/Documents/MLearning/Ti.CameraView/android/build/generated/r/android/support/design/R.java"
