@@ -2,18 +2,17 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 1.0.0
+version: 2.0.0
 apiversion: 4
-description: Custom Android Camera
+description: CameraView
 architectures: arm64-v8a armeabi-v7a x86
-author: Michael Browne
+author: Michael Browne, Rainer Schleevoigt
 license: The MIT License (MIT)
-copyright: Copyright (c) 2013 by ProductWorld
-
+copyright: Copyright (c) 2018 by Hamburger Appwerft
 
 # these should not be edited
-name: custom-android-camera
-moduleid: pw.custom.androidcamera
+name: cameraview
+moduleid: ti.cameraview
 guid: 8343590d-67e5-4371-9bf4-86702cc8dd26
 platform: android
 minsdk: 7.0.1.GA

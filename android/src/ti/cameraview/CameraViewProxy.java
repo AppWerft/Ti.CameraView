@@ -6,7 +6,7 @@
  * Please see the LICENSE included with this distribution for details.
  *
  */
-package pw.custom.androidcamera;
+package ti.cameraview;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -43,7 +43,7 @@ import android.widget.FrameLayout;
 
 
 // This proxy can be created by calling CustomAndroidCamera.createExample({message: "hello world"})
-@Kroll.proxy(creatableInModule=CustomAndroidCameraModule.class)
+@Kroll.proxy(creatableInModule=CameraViewModule.class)
 public class CameraViewProxy extends TiViewProxy
 {
 	// Constructor
@@ -57,7 +57,7 @@ public class CameraViewProxy extends TiViewProxy
 	private static String SAVE = "camera";
 	private static Boolean FRONT_CAMERA = false;
 	private static int PICTURE_TIMEOUT = 1000;
-	private static int RESOLUTION_NAME = CustomAndroidCameraModule.RESOLUTION_LOW;
+	private static int RESOLUTION_NAME = CameraViewModule.RESOLUTION_LOW;
 	
 	private double aspectRatio = 1;
 	
@@ -139,27 +139,27 @@ public class CameraViewProxy extends TiViewProxy
 				Camera.Size pictureSize = null; // getScreenResolutionPictureSize(cameraParams, previewHolder.getSurfaceFrame());
 				
 				switch(RESOLUTION_NAME){
-				case CustomAndroidCameraModule.RESOLUTION_HIGH:
+				case CameraViewModule.RESOLUTION_HIGH:
 					Log.i(TAG, "Setting picture resolution to high");
 					pictureSize = getHighResolutionPictureSize(cameraParams);
 					break;
-				case CustomAndroidCameraModule.RESOLUTION_SCREEN:
+				case CameraViewModule.RESOLUTION_SCREEN:
 					Log.i(TAG, "Trying to match screen resolution for picture");
 					pictureSize = getScreenResolutionPictureSize(cameraParams, previewHolder.getSurfaceFrame());
 					break;
-				case CustomAndroidCameraModule.RESOLUTION_480:
+				case CameraViewModule.RESOLUTION_480:
 					Log.i(TAG, "Trying to match resolution of 720*480 for picture");
 					pictureSize = getCustomResolutionPictureSize(cameraParams, 720*480);
 					break;
-				case CustomAndroidCameraModule.RESOLUTION_720:
+				case CameraViewModule.RESOLUTION_720:
 					Log.i(TAG, "Trying to match resolution of 1280*720 for picture");
 					pictureSize = getCustomResolutionPictureSize(cameraParams, 1280*720);
 					break;
-				case CustomAndroidCameraModule.RESOLUTION_1080:
+				case CameraViewModule.RESOLUTION_1080:
 					Log.i(TAG, "Trying to match resolution of 1920*1080 for picture");
 					pictureSize = getCustomResolutionPictureSize(cameraParams, 1920*1080);
 					break;
-				case CustomAndroidCameraModule.RESOLUTION_LOW:
+				case CameraViewModule.RESOLUTION_LOW:
 				default:
 					Log.i(TAG, "Setting picture resolution to low (default)");
 					pictureSize = getLowResolutionPictureSize(cameraParams);

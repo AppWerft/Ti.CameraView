@@ -6,7 +6,7 @@
  * Please see the LICENSE included with this distribution for details.
  *
  */
-package pw.custom.androidcamera;
+package ti.cameraview;
 
 import org.appcelerator.kroll.KrollModule;
 import org.appcelerator.kroll.annotations.Kroll;
@@ -14,8 +14,8 @@ import org.appcelerator.kroll.annotations.Kroll;
 import org.appcelerator.titanium.TiApplication;
 import org.appcelerator.kroll.common.Log;
 
-@Kroll.module(name="CustomAndroidCamera", id="pw.custom.androidcamera")
-public class CustomAndroidCameraModule extends KrollModule
+@Kroll.module(name="CameraView", id="ti.cameraview")
+public class CameraViewModule extends KrollModule
 {
 
 	// Standard Debugging variables
@@ -24,7 +24,7 @@ public class CustomAndroidCameraModule extends KrollModule
 	// You can define constants with @Kroll.constant, for example:
 	// @Kroll.constant public static final String EXTERNAL_NAME = value;
 	
-	public CustomAndroidCameraModule()
+	public CameraViewModule()
 	{
 		super();
 	}
