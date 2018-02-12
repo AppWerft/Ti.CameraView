@@ -11,7 +11,7 @@ license: The MIT License (MIT)
 copyright: Copyright (c) 2018 by Hamburger Appwerft
 
 # these should not be edited
-name: cameraview
+name: CameraView
 moduleid: ti.cameraview
 guid: 8343590d-67e5-4371-9bf4-86702cc8dd26
 platform: android
