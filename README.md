@@ -24,7 +24,7 @@ function showCamera() {
 	var CameraView = CV.createCameraView({
 		width: 300,
 		height: 300,
-		cameraPosition: CV.hasFrontCamera() ? CV.CAMERA_FRONT : CV.CAMERA_BACK,
+		cameraPosition: Ti.Platform.osname=="iphone" || CV.hasFrontCamera() ? CV.CAMERA_FRONT : CV.CAMERA_BACK,
 	});
 	win.add(CameraView);					
 }
