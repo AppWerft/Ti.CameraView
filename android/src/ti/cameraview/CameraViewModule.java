@@ -24,7 +24,7 @@ import android.hardware.Camera.CameraInfo;
 public class CameraViewModule extends KrollModule {
 
 	// Standard Debugging variables
-	private static final String TAG = "CustomAndroidCameraModule";
+	private static final String TAG = "TiCAMERA";
 
 	// You can define constants with @Kroll.constant, for example:
 	// @Kroll.constant public static final String EXTERNAL_NAME = value;

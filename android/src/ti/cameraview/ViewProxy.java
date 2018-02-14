@@ -50,7 +50,7 @@ public class ViewProxy extends TiViewProxy {
 	}
 
 	// Standard Debugging variables
-	private static final String TAG = "CameraView";
+	private static final String TAG = "CameraViewlavi";
 	private static String SAVE = "camera";
 	private static Boolean FRONT_CAMERA = false;
 	private static int PICTURE_TIMEOUT = 1000;
