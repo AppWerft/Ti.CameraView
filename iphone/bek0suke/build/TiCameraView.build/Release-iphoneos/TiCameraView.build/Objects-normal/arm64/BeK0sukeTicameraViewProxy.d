@@ -1,7 +1,7 @@
 dependencies: \
-  /Users/fuerst/Desktop/TiCameraView/iphone/BeK0sukeTicamera_Prefix.pch \
-  /Users/fuerst/Desktop/TiCameraView/iphone/Classes/BeK0sukeTicameraViewProxy.m \
-  /Users/fuerst/Desktop/TiCameraView/iphone/Classes/BeK0sukeTicameraViewProxy.h \
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/bek0suke/BeK0sukeTicamera_Prefix.pch \
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/bek0suke/Classes/BeK0sukeTicameraViewProxy.m \
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/bek0suke/Classes/BeK0sukeTicameraViewProxy.h \
   /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.0.2.GA/iphone/include/TiViewProxy.h \
   /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.0.2.GA/iphone/include/TiProxy.h \
   /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.0.2.GA/iphone/include/KrollCallback.h \
@@ -39,4 +39,4 @@ dependencies: \
   /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.0.2.GA/iphone/include/TiPoint.h \
   /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.0.2.GA/iphone/include/TiGradient.h \
   /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.0.2.GA/iphone/include/TiViewTemplate.h \
-  /Users/fuerst/Desktop/TiCameraView/iphone/Classes/BeK0sukeTicameraView.h
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/bek0suke/Classes/BeK0sukeTicameraView.h

@@ -1,4 +1,4 @@
 dependencies: \
-  /Users/fuerst/Desktop/SquareCamera/iphone/ComMfoggSquarecamera_Prefix.pch \
-  /Users/fuerst/Desktop/SquareCamera/iphone/Classes/ComMfoggSquarecameraModuleAssets.m \
-  /Users/fuerst/Desktop/SquareCamera/iphone/Classes/ComMfoggSquarecameraModuleAssets.h
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/squarecamera/ComMfoggSquarecamera_Prefix.pch \
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/squarecamera/Classes/ComMfoggSquarecameraModuleAssets.m \
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/squarecamera/Classes/ComMfoggSquarecameraModuleAssets.h

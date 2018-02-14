@@ -1,7 +1,7 @@
 dependencies: \
-  /Users/fuerst/Desktop/TiCameraView/iphone/BeK0sukeTicamera_Prefix.pch \
-  /Users/fuerst/Desktop/TiCameraView/iphone/Classes/BeK0sukeTicameraView.m \
-  /Users/fuerst/Desktop/TiCameraView/iphone/Classes/BeK0sukeTicameraView.h \
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/bek0suke/BeK0sukeTicamera_Prefix.pch \
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/bek0suke/Classes/BeK0sukeTicameraView.m \
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/bek0suke/Classes/BeK0sukeTicameraView.h \
   /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.0.2.GA/iphone/include/TiUIView.h \
   /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.0.2.GA/iphone/include/LayoutConstraint.h \
   /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.0.2.GA/iphone/include/TiDimension.h \

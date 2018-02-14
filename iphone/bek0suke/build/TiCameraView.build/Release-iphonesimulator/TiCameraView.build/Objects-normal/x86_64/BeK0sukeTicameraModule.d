@@ -1,7 +1,7 @@
 dependencies: \
-  /Users/fuerst/Desktop/TiCameraView/iphone/BeK0sukeTicamera_Prefix.pch \
-  /Users/fuerst/Desktop/TiCameraView/iphone/Classes/BeK0sukeTicameraModule.m \
-  /Users/fuerst/Desktop/TiCameraView/iphone/Classes/BeK0sukeTicameraModule.h \
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/bek0suke/BeK0sukeTicamera_Prefix.pch \
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/bek0suke/Classes/BeK0sukeTicameraModule.m \
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/bek0suke/Classes/BeK0sukeTicameraModule.h \
   /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.0.2.GA/iphone/include/TiModule.h \
   /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.0.2.GA/iphone/include/TiEvaluator.h \
   /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.0.2.GA/iphone/include/KrollContext.h \

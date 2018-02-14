@@ -1,7 +1,7 @@
 dependencies: \
-  /Users/fuerst/Desktop/SquareCamera/iphone/ComMfoggSquarecamera_Prefix.pch \
-  /Users/fuerst/Desktop/SquareCamera/iphone/Classes/ComMfoggSquarecameraViewProxy.m \
-  /Users/fuerst/Desktop/SquareCamera/iphone/Classes/ComMfoggSquarecameraViewProxy.h \
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/squarecamera/ComMfoggSquarecamera_Prefix.pch \
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/squarecamera/Classes/ComMfoggSquarecameraViewProxy.m \
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/squarecamera/Classes/ComMfoggSquarecameraViewProxy.h \
   /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.0.2.GA/iphone/include/TiViewProxy.h \
   /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.0.2.GA/iphone/include/TiProxy.h \
   /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.0.2.GA/iphone/include/KrollCallback.h \
@@ -39,7 +39,7 @@ dependencies: \
   /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.0.2.GA/iphone/include/TiPoint.h \
   /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.0.2.GA/iphone/include/TiGradient.h \
   /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.0.2.GA/iphone/include/TiViewTemplate.h \
-  /Users/fuerst/Desktop/SquareCamera/iphone/Classes/ComMfoggSquarecameraView.h \
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/squarecamera/Classes/ComMfoggSquarecameraView.h \
   /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.0.2.GA/iphone/include/TiHost.h \
   /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.0.2.GA/iphone/include/Bridge.h \
   /Users/fuerst/Library/Application\ Support/Titanium/mobilesdk/osx/7.0.2.GA/iphone/include/TiStylesheet.h

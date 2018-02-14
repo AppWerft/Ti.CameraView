@@ -1,4 +1,4 @@
 dependencies: \
-  /Users/fuerst/Desktop/TiCameraView/iphone/BeK0sukeTicamera_Prefix.pch \
-  /Users/fuerst/Desktop/TiCameraView/iphone/Classes/BeK0sukeTicameraModuleAssets.m \
-  /Users/fuerst/Desktop/TiCameraView/iphone/Classes/BeK0sukeTicameraModuleAssets.h
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/bek0suke/BeK0sukeTicamera_Prefix.pch \
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/bek0suke/Classes/BeK0sukeTicameraModuleAssets.m \
+  /Users/fuerst/Documents/MLearning/Ti.CameraView/iphone/bek0suke/Classes/BeK0sukeTicameraModuleAssets.h
