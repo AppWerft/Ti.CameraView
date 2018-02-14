@@ -9,7 +9,7 @@ For iOS I have tested 4 versions, only the SquareCamera seams to work.
 
 Shows `invalid method (createCamera) passed to TiCameraviewModule` although this method is part of example and of source code in module (??)
 
-### [be.k0suke.ticamera](https://github.comthe app crashes without comment/k0sukey/TiCameraView)
+### [be.k0suke.ticamera](https://github.com.k0sukey/TiCameraView)
 
 On repo is a screenshot, but after starting a sample app the app crashes without comment.
 
