@@ -1,14 +1,12 @@
 Ti.CameraView
 ===========================================
 
-This is a collection of module for displaying camera as view. The android version  [Ti-Android-CameraView
-](https://github.com/brownemint/Ti-Android-CameraView) works as aspected.
-For iOS I have tested 4 versions, only the SquareCamera seams to work. 
+This is a merge of two cameraviews.
 
-### [ti.cameraview](https://github.com/vijaysingh-axway/ti.cameraview)
+* <img src="https://avatars2.githubusercontent.com/u/868379?s=460&v=4" width=60>     [Jonathan's CameraView](https://github.com/jonathanrcarter/CameraView) 
+* <img width=60 src="https://avatars1.githubusercontent.com/u/1230342?s=460&v=4">     [Brownemint's Android CameraView](https://github.com/brownemint/Ti-Android-CameraView)
 
-Shows `invalid method (createCamera) passed to TiCameraviewModule`
- 
+I have renamed, build for SDK7.
 
 This CameraView is real time output ImageView from device camera. So the native camera control will not be displayed. But you can set the control buttons and control the movies by yourself.
 
@@ -23,14 +21,14 @@ Simple usage (only view)
 -----------------------
 
 ```
-var CV = require('ti.cameraview');
+var CamView = require('ti.cameraview');
 
 var win = Ti.UI.createWindow();
 function showCamera() {
-	var CameraView = CV.createCameraView({
+	var CameraView = CamView.createView({
 		width: 300,
 		height: 300,
-		cameraPosition: Ti.Platform.osname=="iphone" || CV.hasFrontCamera() ? CV.CAMERA_FRONT : CV.CAMERA_BACK,
+		
 	});
 	win.add(CameraView);					
 }
@@ -70,55 +68,3 @@ For iOS>10 you need this entry in .plist (tiapp.xml)
 <string>Privacy - Camera Usage Description <== to edit!</string>
 ```
 
-Constants
----------
-
-- QUALITY_PHOTO 
-- QUALITY_HIGH 
-- QUALITY_MEDIUM 
-- QUALITY_LOW 
-- QUALITY_640x480 
-- QUALITY_1280x720
-- CAMERA_FRONT
-- CAMERA_BACK
-
-
-
-Methods of Module
------------------
-
-### createView() <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 /><img src="http://envyandroid.com/content/images/2015/03/android3.png" width=24 />
-
-#### Properties:
-- standard view properties (width, height, top, backgroundWidth, etc.)
-- videoQuality (one of QUALITY constants)
-- cameraPosition (one CAMERA_FRONT, CAMERA_BACk constants)
-
-### hasFrontCamera()<img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 /><img src="http://envyandroid.com/content/images/2015/03/android3.png" width=24 />
-Has camera check in device, front
-### hasBackCamera()<img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 /><img src="http://envyandroid.com/content/images/2015/03/android3.png" width=24 />
-Has camera check in device, back
-### hasTorch()<img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 /><img src="http://envyandroid.com/content/images/2015/03/android3.png" width=24 />
-Has LED flash light check in device
-### isTorch()<img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 />
-Now LED flash light on or off in created CameraView method
-
-### toggleTorch()<img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 />
-Toggle front or back camera in created CameraView method
-
-### startCamera() / stopCamera() <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 />
-
-Start or stop camera output in created CameraView method
-
-
-Methods of CameraView
---------------------
-
-### takePicture() <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 /><img src="http://envyandroid.com/content/images/2015/03/android3.png" width=24 />
-
-### startRecording() <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 />
-
-### stopRecording() <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Apple-icon.png" width=20 />
-
-Events of Camera	View
--------------------
